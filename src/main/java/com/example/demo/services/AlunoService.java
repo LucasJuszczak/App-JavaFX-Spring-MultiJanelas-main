@@ -40,4 +40,8 @@ public class AlunoService {
         return alunos;
     }
 
+    public List<Aluno> buscarPorNome(String nome){
+        return alunoRepository.findByNome(nome);
+    }
+
 }
